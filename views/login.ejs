@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="icon" type="image/png" href="4.ico"/>
+    <title>Pin it | user LogIn</title>
+</head>
+<body>
+    <!--ring div starts here-->
+<div class="ring">
+    <i style="--clr:#ff0000;"></i>
+    <i style="--clr:#ff0000;"></i>
+    <i style="--clr:#ff0000;"></i>
+    
+    <div class="login">
+        
+        <div class="topcontainer">
+            <h4 class="welcome">Welcome to</h4>
+            <img class="pinlogo" src="/images/logobtn.png">
+        </div>
+        
+        <h2>Login</h2>
+        
+        <% if(errormassage.length > 0){%><p class="errormsg"><%= errormassage%></p><%}%>
+        
+        <form class="form" action="/login" method="post">
+            <div class="inputBx">
+              <input name="username" type="text" placeholder="Username">
+            </div>
+            <!-- <div class="inputBx">
+              <input name="email" type="email" placeholder="Email">
+            </div> -->
+            <div class="inputBx">
+              <input name="password"type="password" placeholder="Password">
+            </div>
+            <div class="inputBx">
+              <input type="submit" value="Sign in">
+            </div>
+        </form>
+    
+        <div class="links">
+            <a href="/forgot">Forget Password</a>
+            <a href="/register">Sign up</a>
+        </div>
+    
+    
+    </div>
+</div>
+  <!--ring div ends here-->
+</body>
+</html>
