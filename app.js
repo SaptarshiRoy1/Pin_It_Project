@@ -10,7 +10,10 @@ const passport = require('passport');
 var expressSession = require("express-session")
 const flash = require("connect-flash")
 
+//config .env
+require("dotenv").config()
 
+//For git
 const PORT = process.env.PORT || 3000
 
 
